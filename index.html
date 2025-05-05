@@ -441,7 +441,7 @@
 
         /* Footer */
         footer {
-            background-color: #374151; /* Darker gray */
+            background-color: #000000; /* Darker gray */
             color: #d1d5db;
         }
         footer h4 {
@@ -463,7 +463,7 @@
             align-items: center;
             justify-content: center;
             border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: #ffffff;
             transition: background-color 0.3s ease, color 0.3s ease;
         }
         .footer-socials a:hover {
@@ -572,7 +572,35 @@
                  order: 4; /* Hide this element */
             }
         }
+/* --- CSS Thêm cho Màu Icon Mạng Xã Hội --- */
 
+/* Đặt màu mặc định cho từng icon */
+.footer-socials a[href*="facebook.com"] i {
+    color: #1877F2; /* Màu xanh dương của Facebook */
+}
+
+.footer-socials a[href*="instagram.com"] i {
+    color: #C13584; /* Màu hồng/tím của Instagram */
+    /* Bạn cũng có thể thử các màu khác như #E1306C */
+}
+
+.footer-socials a[href*="tiktok.com"] i {
+    color: #000000; /* Màu đen của TikTok (hoặc #111111) */
+     /* TikTok có logo phức tạp, màu đen thường được dùng cho icon đơn sắc */
+}
+
+.footer-socials a[href*="zalo.me"] i {
+    color: #0068FF; /* Màu xanh dương của Zalo */
+}
+
+/* Giữ nguyên hiệu ứng hover (nền hồng, icon trắng) */
+/* Quy tắc CSS này đã có sẵn trong file của bạn và sẽ hoạt động: */
+.footer-socials a:hover {
+    background-color: #f472b6; /* Nền hồng khi hover */
+    color: white; /* Màu chữ (và icon kế thừa) thành trắng khi hover */
+}
+
+/* --- Hết phần CSS Thêm --- */
     </style>
 </head>
 <body class="bg-gray-50">
@@ -928,7 +956,7 @@
                 <div>
                     <h4 class="font-heading font-semibold text-white mb-5">Danh Mục Hoa</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#hoa-tang-le" class="hover:text-pink-300 hover:underline">Hoa Tang Lễ</a></li>
+                        <li><a href="dmhoatangle.html" class="hover:text-pink-300 hover:underline">Hoa Tang Lễ</a></li>
                         <li><a href="#hoa-nguoi-yeu" class="hover:text-pink-300 hover:underline">Hoa Tặng Người Yêu</a></li>
                         <li><a href="#hoa-tot-nghiep" class="hover:text-pink-300 hover:underline">Hoa Tốt Nghiệp</a></li>
                         <li><a href="#hoa-khai-truong" class="hover:text-pink-300 hover:underline">Hoa Khai Trương</a></li>
